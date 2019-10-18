@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Add Student"
+            android:textSize="25sp"
+            android:background="#00E60A"
+            android:onClick="addStudent" />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student List"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="#2979FF"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+</LinearLayout>
